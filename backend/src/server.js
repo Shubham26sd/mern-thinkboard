@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 5001;
 app.use(cors());
 app.use(express.json()); //this middleware will parse JSON bodies: req.body
 
-app.use("/api/notes", notesRoutes);
+app.use("/notes", notesRoutes);
 
 const __dirname = path.resolve();
 
